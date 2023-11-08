@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order a Smoothiegram!</title>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
 
   <body>
@@ -47,43 +48,40 @@
     <form>
         <label>Your name</label>
         <input type="text" name="sender"/>
-        
+        <div>
         <label>Who are we sending this to?</label>
         <input type="text" name="recipient"/>
-        
-        <label>Choose a smoothie</label>
+        </div>
+        <div>
+          <label>Choose a smoothie</label>
         <select name="smoothie">
           <option>Please choose an option</option>
           <option>Super Strawberries Delicious</option>
           <option>White Grape Ranger</option>
           <option>Blueberry Blast</option>
         </select>
+        </div>
 
-        <span>When should we deliver?</span>
-        <input type="radio" name="delivery-time" value="asap" />
-        <label></label>As soon as possible</label>
+        <div><span>When should we deliver?</span>
+        <input type="radio" name="delivery-time" value="asap" id='asap' />
+        <label for='asap'>As soon as possible</label>
         <input type="radio" name="delivery-time" value="am" />
         <label>Morning</label>
         <input type="radio" name="delivery-time" value="pm" />
         <label>Afternoon</label>
+        </div>
         
+        <div>
         <label>Enter your message</label>
         <textarea name="message"></textarea>
+        </div>
         
-        <label>Subscribe to our newsletter?</label>
+        <div><label>Subscribe to our newsletter?</label>
         <input type="checkbox" name="subscribe" value="yes" checked />
-        
-        <button type='submit'>Submit</button>
-
+        </div>
+        <div><button type='submit'>Submit</button></div>
     </form>
     </section>
         </main>
-
-      <section>
-        Order Form Your name Who are we sending this to? Choose a smoothie Please choose an option
-        Super Strawberries Delicious White Grape Ranger Blueberry Blast When should we deliver? As
-        soon as possible Morning Afternoon Enter your message Subscribe to our newsletter? Submit
-      </section>
-    </main>
   </body>
 </html>
