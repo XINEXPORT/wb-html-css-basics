@@ -1,6 +1,6 @@
 body {
 font-family: system-ui, sans-serif;
-background:#d1ffcc;
+background:linear-gradient(to left top, #070744, #156397 , #00ff00, #ff3399, #6666ff);
 }
 
 .lead{
@@ -87,6 +87,7 @@ td.price{
 
 .form-group{
     margin-bottom: 10px;
+    font-weight: 00;
 }
 
 label{
