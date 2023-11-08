@@ -43,28 +43,39 @@
     </section>
 
     <section>
-        Order Form
+        <h2>Order Form</h2>
+    <form>
+        <label>Your name</label>
+        <input type="text" name="sender"/>
         
-        Your name
+        <label>Who are we sending this to?</label>
+        <input type="text" name="recipient"/>
         
-        Who are we sending this to?
+        <label>Choose a smoothie</label>
+        <select name="smoothie">
+          <option>Please choose an option</option>
+          <option>Super Strawberries Delicious</option>
+          <option>White Grape Ranger</option>
+          <option>Blueberry Blast</option>
+        </select>
+
+        <span>When should we deliver?</span>
+        <input type="radio" name="delivery-time" value="asap" />
+        <label></label>As soon as possible</label>
+        <input type="radio" name="delivery-time" value="am" />
+        <label>Morning</label>
+        <input type="radio" name="delivery-time" value="pm" />
+        <label>Afternoon</label>
         
-        Choose a smoothie
-        Please choose an option
-        Super Strawberries Delicious
-        White Grape Ranger
-        Blueberry Blast
+        <label>Enter your message</label>
+        <textarea name="message"></textarea>
         
-        When should we deliver?
-        As soon as possible
-        Morning
-        Afternoon
+        <label>Subscribe to our newsletter?</label>
+        <input type="checkbox" name="subscribe" value="yes" checked />
         
-        Enter your message
-        
-        Subscribe to our newsletter?
-        
-        Submit 
+        <button type='submit'>Submit</button>
+
+    </form>
     </section>
         </main>
 
